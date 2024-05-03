@@ -1,3 +1,10 @@
+tiempo_sintomas($ans)
+    Cuanto tiempo con los sintomas?
+    ---
+    $ans = select_1
+        1: Menos de 1 dia
+        2: Entre 1 y 4 dias
+        3: Mas de 4 dias
 tiene_tos_normal($ans)
 	Tiene tos normal?
 	---

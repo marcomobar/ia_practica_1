@@ -6,7 +6,7 @@ from pyke import krb_traceback
 
 engine = knowledge_engine.engine(__file__)
 
-def bc_test_questions():
+def obtener_diagnostico():
 
     engine.reset()      # Allows us to run tests multiple times.
 
@@ -16,10 +16,13 @@ def bc_test_questions():
     try:
         with engine.prove_goal('diagnostico_rules.diagnostico($enfermedad)') as gen:
             for vars, plan in gen:
+                print('\n')
                 print("El diagnostico es: %s" % (vars['enfermedad']))
-        with engine.prove_goal('diagnostico_rules.requiere($tratamiento, $enfermedad)') as gen:
-            for vars, plan in gen:
-                print("Requiere: %s" % (vars['tratamiento']))
+                with engine.prove_goal('diagnostico_rules.requiere($tratamiento, $enfermedad)') as gen:
+                    for vars, plan in gen:
+                        print("Requiere: %s" % (vars['tratamiento']))
+                        break
+                break
 
     except Exception:
         # This converts stack frames of generated python functions back to the
@@ -31,5 +34,5 @@ def bc_test_questions():
     print("done")
 
 if __name__ == '__main__':
-    bc_test_questions()
+    obtener_diagnostico()
    
