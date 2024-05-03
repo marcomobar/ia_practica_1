@@ -1,0 +1,195 @@
+tiene_tos_normal($ans)
+	Tiene tos normal?
+	---
+	$ans = yn
+tiene_tos_con_sangre($ans)
+	Tiene tos con sangre?
+	---
+	$ans = yn
+tiene_tos_con_espuma($ans)
+	Tiene tos con sangre?
+	---
+	$ans = yn
+tiene_dolor_de_garganta($ans)
+	Tiene dolor de garganta?
+	---
+	$ans = yn
+tiene_fiebre($ans)
+    Tiene fiebre?
+    ---
+    $ans = yn
+tiene_fiebre_alta($ans)
+	Tiene fiebra alta?
+	---
+	$ans = yn
+tiene_dificultad_para_respirar($ans)
+	Tiene dificultad para respirar?
+	---
+	$ans = yn
+tiene_perdida_de_peso($ans)
+	Tiene perdida de peso?
+	---
+	$ans = yn
+tiene_dolor_de_cabeza($ans)
+    Tiene dolor de cabeza?
+    ---
+    $ans = yn
+tiene_dolor_de_cabeza_severo($ans)
+	Tiene dolor de cabeza severo?
+	---
+	$ans = yn
+tiene_rigidez_de_cuello($ans)
+    Tiene rigidez de cuello?
+    ---
+    $ans = yn
+tiene_dolor_abdominal($ans)
+    Tiene dolor abdominal?
+    ---
+    $ans = yn
+tiene_dolor_abdominal_agudo_en_el_cuadrante_inferior_derecho($ans)
+    Tiene dolor abdominal agudo en el cuadrante inferior derecho?
+    ---
+    $ans = yn
+tiene_dolor_al_orinar($ans)
+    Tiene dolor al orinar?
+    ---
+    $ans = yn
+tiene_frecuencia_urinaria($ans)
+    Tiene frecuencia urinaria?
+    ---
+    $ans = yn
+tiene_nauseas($ans)
+    Tiene nauseas?
+    ---
+    $ans = yn
+tiene_vomitos($ans)
+    Tiene vomitos?
+    ---
+    $ans = yn
+tiene_diarrea($ans)
+    Tiene diarrea?
+    ---
+    $ans = yn
+tiene_dolor_toracico($ans)
+    Tiene dolor toracico?
+    ---
+    $ans = yn
+
+tiene_falta_de_aliento($ans)
+    Tiene falta de aliento?
+    ---
+    $ans = yn
+tiene_dolor_en_las_articulaciones($ans)
+    Tiene dolor en las articulaciones?
+    ---
+    $ans = yn
+tiene_erupcion_cutanea($ans)
+    Tiene erupcion cutanea?
+    ---
+    $ans = yn
+tiene_fatiga_cronica($ans)
+    Tiene fatiga cronica?
+    ---
+    $ans = yn
+tiene_dolores_musculares($ans)
+    Tiene dolores musculares?
+    ---
+    $ans = yn
+tiene_sed_excesiva($ans)
+    Tiene sed excesiva?
+    ---
+    $ans = yn
+tiene_orina_con_frecuencia($ans)
+    Tiene orina con frecuencia?
+    ---
+    $ans = yn
+tiene_palpitaciones($ans)
+    Tiene palpitaciones?
+    ---
+    $ans = yn
+tiene_temblor($ans)
+    Tiene temblor?
+    ---
+    $ans = yn
+tiene_aumento_de_peso($ans)
+    Tiene aumento de peso?
+    ---
+    $ans = yn
+tiene_tos_seca_persistente($ans)
+    Tiene tos seca persistente?
+    ---
+    $ans = yn
+tiene_dolor_de_garganta_con_manchas_blancas($ans)
+    Tiene dolor de garganta con manchas blancas?
+    ---
+    $ans = yn
+tiene_dolor_en_la_espalda_baja($ans)
+    Tiene dolor en la espalda baja?
+    ---
+    $ans = yn
+tiene_dolor_en_el_pecho_que_empeora_con_la_inspiracion($ans)
+    Tiene dolor en el pecho que empeora con la inspiracion?
+    ---
+    $ans = yn
+tiene_deformidad_en_las_articulaciones($ans)
+    Tiene deformidad en las articulaciones?
+    ---
+    $ans = yn
+tiene_dolor_severo_en_el_abdomen_superior($ans)
+    Tiene dolor severo en el abdomen superior?
+    ---
+    $ans = yn
+tiene_ictericia($ans)
+    Tiene ictericia?
+    ---
+    $ans = yn
+tiene_sudores($ans)
+    Tiene sudores?
+    ---
+    $ans = yn   
+tiene_mareos($ans)
+    Tiene mareos?
+    ---
+    $ans = yn
+tiene_desmayos($ans)
+    Tiene desmayos?
+    ---
+    $ans = yn
+tiene_vision_borrosa($ans)
+    Tiene vision borrosa?
+    ---
+    $ans = yn
+tiene_dolor_y_enrojecimiento_en_un_ojo($ans)
+    Tiene dolor y enrojecimiento en un ojo?
+    ---
+    $ans = yn
+tiene_dolor_severo_en_el_flanco($ans)
+    Tiene dolor severo en el flanco?
+    ---
+    $ans = yn
+tiene_sangre_en_la_orina($ans)
+    Tiene sangre en la orina?
+    ---
+    $ans = yn
+tiene_picazon_intensa($ans)
+    Tiene picazon intensa?
+    ---
+    $ans = yn
+tiene_sarpullido($ans)
+    Tiene sarpullido?
+    ---
+    $ans = yn
+tiene_dolor_al_mover_las_extremidades($ans)
+    Tiene dolor al mover las extremidades?
+    ---
+    $ans = yn
+tiene_convulsiones($ans)
+    Tiene convulsiones?
+    ---
+    $ans = yn
+tiene_perdida_de_conciencia($ans)
+    Tiene perdida de conciencia?
+    ---
+    $ans = yn
+
+

@@ -1,0 +1,197 @@
+diagnostico_resfriado_comun
+    use diagnostico(resfriado_comun)
+    when
+        questions.tiene_tos_normal(True)
+        questions.tiene_dolor_de_garganta(True)
+
+# diagnostico_neumonia
+#     use diagnostico(neumonia)
+#     when
+#         questions.tiene_tos_normal(True)
+#         questions.tiene_fiebre_alta(True)
+#         questions.dificultad_para_respirar(True)
+
+diagnostico_tuberculosis
+    use diagnostico(tuberculosisn)
+    when
+        questions.tiene_tos_con_sangre(True)
+        questions.tiene_perdida_de_peso(True)
+
+# diagnostico_meningitis
+#     use diagnostico(meningitis)
+#     when
+#         questions.tiene_dolor_de_cabeza_severo(True)
+#         questions.tiene_rigidez_de_cuello(True)
+
+#diagnostico_apendicitis
+#    use diagnostico(apendicitis)
+#    when
+#        questions.tiene_dolor_abdominal_agudo_en_el_cuadrante_inferior_derecho(True)
+#
+#diagnostico_infeccion_urinaria
+#    use diagnostico(infeccion_urinaria)
+#    when
+#        questions.tiene_dolor_al_orinar(True)
+#        questions.tiene_frecuencia_urinaria(True)
+#
+#diagnostico_gastroenteritis
+#    use diagnostico(gastroenteritis)
+#    when
+#        questions.tiene_nauseas(True)
+#        questions.tiene_vomitos(True)
+#        questions.tiene_diarrea(True)
+#
+#diagnostico_infarto_de_miocardio
+#    use diagnostico(infarto_de_miocardio)
+#    when
+#        questions.tiene_dolor_toracico(True)
+#        questions.tiene_falta_de_aliento(True)
+#
+#diagnostico_enfermedad_de_lyme
+#    use diagnostico(enfermedad_de_lyme)
+#    when
+#        questions.tiene_dolor_en_las_articulaciones(True)
+#        questions.tiene_erupcion_cutanea(True)
+#
+#diagnostico_fibromialgia
+#    use diagnostico(fibromialgia)
+#    when
+#        questions.tiene_fatiga_cronica(True)
+#        questions.tiene_dolores_musculares(True)
+#
+#diagnostico_diabetes_mellitus
+#    use diagnostico(diabetes_mellitus)
+#    when
+#        questions.tiene_sed_excesiva(True)
+#        questions.tiene_orina_con_frecuencia(True)
+
+# diagnostico_hipertiroidismo
+#     use diagnostico(hipertiroidismo)
+#     when
+#         questions.tiene_palpitaciones(True)
+#         questions.tiene_temblor(True)
+# 
+# diagnostico_hipotiroidismo
+#     use diagnostico(hipotiroidismo)
+#     when
+#         questions.tiene_aumento_de_peso(True)
+#         questions.tiene_fatiga_cronica(True)
+# 
+# diagnostico_covid
+#     use diagnostico(covid)
+#     when
+#         questions.tiene_fiebre(True)
+#         questions.tiene_tos_seca_persistente(True)
+# 
+# diagnostico_vih_sida
+#     use diagnostico(vih_sida)
+#     when
+#         questions.tiene_fiebre(True)
+#         questions.tiene_sudores(True)
+# 
+# diagnostico_amigdalitis_bacteriana
+#     use diagnostico(amigdalitis_bacteriana)
+#     when
+#         questions.tiene_dolor_de_garganta_con_manchas_blancas(True)
+# 
+# diagnostico_cancer_de_colon
+#     use diagnostico(cancer_de_colon)
+#     when
+#         questions.tiene_perdida_de_peso(True)
+#         questions.tiene_dolor_abdominal(True)
+# 
+# diagnostico_pielonefritis
+#     use diagnostico(pielonefritis)
+#     when
+#         questions.tiene_dolor_en_la_espalda_baja(True)
+#         questions.tiene_fiebre(True)
+# 
+# diagnostico_pericarditis
+#     use diagnostico(pericarditis)
+#     when
+#         questions.tiene_dolor_en_el_pecho_que_empeora_con_la_inspiracion(True)
+# 
+# diagnostico_reumatoide
+#     use diagnostico(reumatoide)
+#     when
+#         questions.tiene_dolor_en_las_articulaciones(True)
+#         questions.tiene_deformidad_en_las_articulaciones(True)
+# 
+# diagnostico_edema_pulmonar
+#     use diagnostico(edema_pulmonar)
+#     when
+#         questions.tiene_falta_de_aliento(True)
+#         questions.tiene_tos_con_espuma(True)
+# 
+# diagnostico_pancreatitis_aguda
+#     use diagnostico(pancreatitis_aguda)
+#     when
+#         questions.tiene_dolor_severo_en_el_abdomen_superior(True)
+# 
+# diagnostico_hepatitis
+#     use diagnostico(hepatitis)
+#     when
+#         questions.tiene_ictericia(True)
+#         questions.tiene_dolor_abdominal(True)
+# 
+# diagnostico_arritmia_cardiaca
+#     use diagnostico(arritmia_cardiaca)
+#     when
+#         questions.tiene_mareos(True)
+#         questions.tiene_desmayos(True)
+# 
+# diagnostico_glaucoma
+#     use diagnostico(glaucoma)
+#     when
+#         questions.tiene_dolor_de_cabeza(True)
+#         questions.tiene_vision_borrosa(True)
+# 
+# diagnostico_uveitis
+#     use diagnostico(uveitis)
+#     when
+#         questions.tiene_dolor_y_enrojecimiento_en_un_ojo(True)
+# 
+# diagnostico_calculos_renales
+#     use diagnostico(calculos_renales)
+#     when
+#         questions.tiene_dolor_severo_en_el_flanco(True)
+#         questions.tiene_sangre_en_la_orina(True)
+# 
+# diagnostico_varicela
+#     use diagnostico(varicela)
+#     when
+#         questions.tiene_picazon_intensa(True)
+#         questions.tiene_sarpullido(True)
+# 
+# diagnostico_osteomielitis
+#     use diagnostico(osteomielitis)
+#     when
+#         questions.tiene_fiebre(True)
+#         questions.tiene_dolor_al_mover_las_extremidades(True)
+# 
+# diagnostico_epilepsia
+#     use diagnostico(epilepsia)
+#     when
+#         questions.tiene_convulsiones(True)
+#         questions.tiene_perdida_de_conciencia(True)
+
+requiere_medicacion
+     use requiere(medicacion, $enfermedad)
+     when
+         diagnostico($enfermedad)
+         enfermedades.gravedad_de(baja, $enfermedad)
+
+requiere_ambulancia
+     use requiere(ambulancia, $enfermedad)
+     when
+         diagnostico($enfermedad)
+         enfermedades.gravedad_de(media, $enfermedad)
+
+requiere_hospitalizacion
+     use requiere(hospitalizacion, $enfermedad)
+     when
+         diagnostico($enfermedad)
+         enfermedades.gravedad_de(alta, $enfermedad)
+
+
+# tiempo de recuperacion
