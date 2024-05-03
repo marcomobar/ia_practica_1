@@ -9,7 +9,7 @@ diagnostico_neumonia
     when
         questions.tiene_tos_normal(True)
         questions.tiene_fiebre_alta(True)
-        questions.dificultad_para_respirar(True)
+        questions.tiene_dificultad_para_respirar(True)
 
 diagnostico_tuberculosis
     use diagnostico(tuberculosisn)
@@ -180,12 +180,16 @@ requiere_medicacion
      when
          diagnostico($enfermedad)
          enfermedades.gravedad_de(baja, $enfermedad)
+         questions.tiempo_sintomas($ans)
+         check $ans in (1,2,3)
 
 requiere_ambulancia_media
      use requiere(ambulancia, $enfermedad)
      when
          diagnostico($enfermedad)
          enfermedades.gravedad_de(media, $enfermedad)
+         questions.tiempo_sintomas($ans)
+         check $ans in (1,2)
 
 requiere_ambulancia_alta
      use requiere(ambulancia, $enfermedad)

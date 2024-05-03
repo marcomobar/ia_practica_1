@@ -1,5 +1,5 @@
 tiempo_sintomas($ans)
-    Cuanto tiempo con los sintomas?
+    Tiempo con sintomas?
     ---
     $ans = select_1
         1: Menos de 1 dia

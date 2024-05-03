@@ -17,11 +17,18 @@ def obtener_diagnostico():
         with engine.prove_goal('diagnostico_rules.diagnostico($enfermedad)') as gen:
             for vars, plan in gen:
                 print('\n')
+                print('###########################')
+                enfermedad = vars['enfermedad']
                 print("El diagnostico es: %s" % (vars['enfermedad']))
-                with engine.prove_goal('diagnostico_rules.requiere($tratamiento, $enfermedad)') as gen:
-                    for vars, plan in gen:
-                        print("Requiere: %s" % (vars['tratamiento']))
-                        break
+                print('###########################')
+                break
+        tratamiento_goal_string = f'diagnostico_rules.requiere($tratamiento, {enfermedad})'
+        with engine.prove_goal(tratamiento_goal_string) as gen:
+            for vars, plan in gen:
+                print('\n')
+                print('###########################')
+                print("Requiere: %s" % (vars['tratamiento']))
+                print('###########################')
                 break
 
     except Exception:
